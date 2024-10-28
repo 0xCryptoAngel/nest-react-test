@@ -16,10 +16,13 @@ export class Relation {
   companyName: string;
 
   @Column({ type: 'varchar', length: 50 })
+  country: string;
+
+  @Column({ type: 'varchar', length: 50 })
   emailReminder: string;
 
   @Column({ type: 'varchar', length: 50 })
-  emialInvoice: string;
+  emailInvoice: string;
 
   @Column({ type: 'varchar', length: 50 })
   group: string;

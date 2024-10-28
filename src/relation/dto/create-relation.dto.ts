@@ -31,6 +31,11 @@ export class CreateRelationDto {
   companyName: string;
 
   @IsNotEmpty()
+  @IsString()
+  @MaxLength(50)
+  country: string;
+
+  @IsNotEmpty()
   @IsEmail({}, { message: 'Please provide a valid email address.' })
   @MaxLength(50)
   emailReminder: string;

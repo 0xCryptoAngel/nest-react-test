@@ -29,6 +29,11 @@ export class UpdateRelationDto extends PartialType(CreateRelationDto) {
   companyName?: string;
 
   @IsOptional()
+  @IsString()
+  @MaxLength(50)
+  country?: string;
+
+  @IsOptional()
   @IsEmail({}, { message: 'Please provide a valid email address.' })
   @MaxLength(50)
   emailReminder?: string;
